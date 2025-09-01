@@ -1,0 +1,43 @@
+body
+{
+    background-color: var(--branco);
+    color: var(--texto-escuro);
+}
+
+.container-cadastro
+{
+    background-color: var(--fundo);
+    height: 25vh;
+    border-radius: 20px;
+    margin: 50px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: space-between;
+}
+
+.textos-cabecalho
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--branco);
+}
+
+.titulo-cadastro
+{
+    font-size: 2rem;
+}
+
+.subtitulo-cadastro
+{
+    padding-top: 10px;
+}
+
+.logo
+{
+    width: 8%;
+}
+
+
