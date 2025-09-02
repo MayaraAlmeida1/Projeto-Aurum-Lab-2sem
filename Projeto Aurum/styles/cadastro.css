@@ -1,11 +1,10 @@
-body
-{
+body {
     background-color: var(--branco);
     color: var(--texto-escuro);
 }
 
-.container-cadastro
-{
+/* ESTILIZAÇÃO PARTE SUPERIOR */
+.container-cadastro {
     background-color: var(--fundo);
     height: 25vh;
     border-radius: 20px;
@@ -17,27 +16,101 @@ body
     justify-content: space-between;
 }
 
-.textos-cabecalho
-{
+.textos-cabecalho {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     color: var(--branco);
 }
 
-.titulo-cadastro
-{
+.titulo-cadastro {
     font-size: 2rem;
 }
 
-.subtitulo-cadastro
-{
+.subtitulo-cadastro {
     padding-top: 10px;
 }
 
-.logo
-{
+.logo {
     width: 8%;
 }
 
+/* ESTILIZAÇÃO FORMULARIOS */
 
+.form-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formularios {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 4%;
+}
+
+label {
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid var(--borda);
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 500px;
+}
+
+.email-cadastro {
+    margin-top: 4%;
+}
+
+.confirmar-senha-cadastro {
+    margin-top: 4%;
+}
+
+.instrucao-senha {
+    font-size: 0.85rem;
+    color: var(--texto-escuro);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.botao-entrar {
+    background-color: var(--fundo);
+    color: var(--amarelo);
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 30%;
+}
+
+.botao-entrar:hover {
+    background-color: #26394E;
+    cursor: pointer;
+}
+
+.link-voltar
+{
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--texto-escuro);
+    margin-top: 20px;
+}
