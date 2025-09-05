@@ -1,21 +1,19 @@
-body
-{
+body {
     background-color: var(--branco);
     color: var(--texto-escuro);
 
 }
 
-.container-login 
-{
+.container-login {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* a parte esquerda ocupa 1 fração da tela e a parte esquerda ocupa 2 frações*/
+    grid-template-columns: 1fr 2fr;
+    /* a parte esquerda ocupa 1 fração da tela e a parte esquerda ocupa 2 frações*/
     height: 100vh;
 }
 
 /* LADO ESUQERDO */
 
-.painel-esquerdo
-{
+.painel-esquerdo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,21 +26,18 @@ body
     color: var(--branco);
 }
 
-.logo
-{
+.logo {
     width: 50%;
     margin: 50px 0 10px;
 }
 
-.descricao
-{
+.descricao {
     margin: 0 0 60px;
     font-size: 0.9em;
     font-weight: 300;
 }
 
-.link-cadastro
-{
+.link-cadastro {
     color: var(--amarelo);
     font-weight: 600;
     margin-top: 50px;
@@ -51,8 +46,7 @@ body
 
 /* LADO DIREITO */
 
-.painel-direito
-{
+.painel-direito {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,25 +56,21 @@ body
     padding: 40px 60px;
 }
 
-.cabecalho-login
-{
+.cabecalho-login {
     margin-bottom: 30px;
 }
 
-.titulo-login
-{
+.titulo-login {
     font-size: 2rem;
     margin: 0;
 }
 
-.subtitulo-login
-{
+.subtitulo-login {
     margin: 8px 0 0;
     color: #333333;
 }
 
-.form-login
-{
+.form-login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,39 +78,37 @@ body
     gap: 16px;
 }
 
-label
-{
+label {
     font-weight: 600;
     align-self: flex-start;
 }
 
-input
-{
+input {
     padding: 12px;
     border: 1px solid var(--borda);
     border-radius: 10px;
     font-size: 1rem;
-    width: 100%;    
+    width: 100%;
 }
 
-.campo-senha
-{
+.campo-senha {
     display: flex;
     align-items: center;
     width: 100%;
-    position: relative; /*deixa o pai se alinhar dentro da página*/
+    position: relative;
+    /*deixa o pai se alinhar dentro da página*/
 }
 
-.icone-olho
-{
-    position: absolute; /*alinha o elemento junto ao pai, permitindo ficar dentro dele*/
+.icone-olho {
+    position: absolute;
+    /*alinha o elemento junto ao pai, permitindo ficar dentro dele*/
     right: 5%;
     top: 55%;
-    transform: translateY(-50%); /*moveo elemento para cima metade da sua própria altura*/
+    transform: translateY(-50%);
+    /*moveo elemento para cima metade da sua própria altura*/
 }
 
-.botao-login
-{
+.botao-login {
     background-color: var(--fundo);
     color: var(--amarelo);
     padding: 14px;
@@ -131,14 +119,12 @@ input
     width: 100%;
 }
 
-.botao-login:hover
-{
+.botao-login:hover {
     background-color: #26394E;
     cursor: pointer;
 }
 
-.link-esqueci
-{
+.link-esqueci {
     text-align: center;
     font-size: 0.9rem;
     text-decoration: underline;
@@ -147,13 +133,52 @@ input
     margin-top: 10px;
 }
 
-.erro-login
-{
+.erro-login {
     color: var(--erro);
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
-    display: none; /*esconde o elemento da tela*/
+    display: none;
+    /*esconde o elemento da tela*/
 }
 
-/* AJUSTES RESPONSIVIDADE */
+.logo-resp {
+    display: none;
+}
+
+/*! AJUSTES RESPONSIVIDADE -MEDIA QUERY */
+
+@media (max-width: 900px) {
+    .container-login {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-esquerdo {
+        margin: 0;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .descricao {
+        font-size: 1.1em;
+        max-width: 55%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-resp {
+        display: inline;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-login {
+        width: 100%;
+    }
+
+    .campo-senha {
+        width: 100%;
+    }
+}
